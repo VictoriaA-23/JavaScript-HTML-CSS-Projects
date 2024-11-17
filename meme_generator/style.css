@@ -1,0 +1,117 @@
+/*Title and Meme Form */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: agbalumo;
+    transition: color 1700ms;
+}
+
+.bg div{
+    color:#995757;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.container{
+display: flex;
+justify-content: center;}
+
+body{
+    background-color: #B3BAAD;
+    font-size: 20px;
+}
+
+#submit{
+    background-color: #D6B85A;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #995757;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    left: 35%;
+
+}
+
+input[type="text"], textarea{
+    background-color: #B3BAAD;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+/* Meme Collection */
+#memes{
+    padding: 1%;
+}
+
+#collection{
+    list-style: none;
+    width: 100%;
+}
+
+.image{
+    display: inline-block;
+    margin: 1%;
+    width: 500px;
+	height: auto;
+	text-align: center;
+	position: relative;
+	opacity: 1;
+}
+
+.image:hover{opacity: 0.6;}
+
+img {width: 500px;}
+
+
+
+.red-cross{
+    width: 500px;
+	height: 250px;
+	content: "X";
+	position: absolute;
+	top: 50%;
+	left:50%;
+    transform: translate(-50%, -66%);
+	font-weight: 700;
+	text-align: center;
+	font-size: 1500%;
+    color: red;
+	opacity: 0;
+}
+
+.red-cross:hover {
+	opacity: 0.5;
+	z-index: 20;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    max-height: 50%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    max-height: 50%;
+}
+.text {
+    font-family: Georgia, serif;
+    width: 500px;
+    font-size: 250%;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px black;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+    

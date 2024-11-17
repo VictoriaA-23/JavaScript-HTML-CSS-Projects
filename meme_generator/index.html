@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Meme Generator</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="bg">
+			<h1><span class="title">Meme Generator</span></h1>
+
+			<div class="container">
+				<form name="memeform" action="" id="memeform">
+					<div>
+						<label for="toptext">
+							What do you want to write on the top of your meme?<br
+						/></label>
+						<div>
+							<input
+								type="text"
+								placeholder="Top Text"
+								name="tt"
+								id="topText"
+							/>
+						</div>
+					</div>
+
+					<div>
+						<label for="bottomtext">
+							What do you want to write on the bottom of your meme?<br
+						/></label>
+						<div>
+							<input
+								type="text"
+								placeholder="Bottom Text"
+								name="bt"
+								id="bottomText"
+							/>
+						</div>
+					</div>
+
+					<div>
+						<label for="image">
+							What picture do you want to use for your meme?<br
+						/></label>
+						<div>
+							<input
+								type="text"
+								placeholder="Image URL"
+								name="i"
+								id="image"
+							/>
+						</div>
+					</div>
+
+					<div>
+						<input type="submit" value="Create Meme" id="submit" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<br />
+		<hr />
+
+		<section id="memes">
+			<ul id="collection"></ul>
+		</section>
+
+		<script src="app.js"></script>
+	</body>
+</html>
